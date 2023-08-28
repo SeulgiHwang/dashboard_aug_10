@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시글 수정하기</title>
+</head>
+<body>
+<h2>게시글 수정하기</h2>
+<form action="/board/update" method="post">
+<!-- BoardControlelr에서 model단입력후 하기입력 -->
+<input type="text" name="boardNo" th:value="${boardNo}">
+
+	<table>
+	<tr>
+		<td>제목</td>
+		<td>
+			<input type="text" name="title" >
+		</td>
+	</tr>
+	<tr>
+		<td>작성자</td>
+		<td>
+			<input type="text" name="writer">
+		</td>
+		
+	</tr>
+	<tr>
+		<td>내용</td>
+		<td>
+			<textarea name ="content" id="글내용" cols="40" rows="10" ></textarea>
+		</td>
+	</tr>
+	</table>
+	<div class="btn">
+		<button type="submit">수정하기</button>
+	</div>
+	<div class="btn">
+		<button type="submit">목록</button>
+	</div>
+</form>
+</body>
+</html>

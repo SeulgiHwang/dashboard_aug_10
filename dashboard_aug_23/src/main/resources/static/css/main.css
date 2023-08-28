@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+*{
+    margin:0 auto;
+    padding:0;
+    font-family: "맑은고딕";
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    width: 1000px;
+    height: 1000px;
+    background-color: #cccccc;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+header{
+    float:right;
+    width: 220px;
+    height: 930px;
+    margin-left: 1px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.login_logout>a,
+.share>a,
+.board>a,
+.QA>a,
+.print>a
+{
+    background-color: #ffffff;
+    font-weight: bold;
+    float:left;
+    width: 130px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 80px;
+    display: block;
+    position:absolute;
+}
+
+.share>a{
+    top: 55px;
+}
+.input{
+    float:left;
+    width: 100%;
+    height: 50px;
+    font-size:20px;
+}
+
+.expense>a,
+.income>a{
+    background-color: #ffffff;
+    width: 130px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: bold;
+    text-align: center;
+    top: 130px;
+    position:absolute;
+    margin-left: 80px;
+}
+.income>a{
+    margin-top: 5px;
+    top: 210px;
+}
+
+.board>a{
+    top:380px
+}
+.QA>a{
+    top:405px
+}
+.print>a{
+    top:430px
+}
+
+#print{
+	background-color:#ffffff;
+	border:none;
+	font-weight:bold;
+}
+.menu>a,
+.cal>a{
+    background-color: #ffffff;
+    width: 130px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: bold;
+    text-align: center;
+    top: 500px;
+    position:absolute;
+    margin-left: -140px;
+}
+
+.cal>a{
+    top:585px;
+
+}
+
+.firstline{
+    float:left;
+    width: 760px;
+    height:350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.total{
+    background-color: #ffffff;
+    float:left;
+    width: 250px;
+    height: 350px;
+}
+.fc{
+    background-color: #ffffff;
+    float:right;
+    width: 250px;
+    height: 350px;
+}
+
+.vc{
+    background-color:#ffffff;
+    float:right;
+    width: 250px;
+    height: 350px;
+    margin-left: 255px;
+    position: absolute
+}
+.secondline h2,
+.tip h2{
+    float:left;
+    width: 100%;
+    text-align-last: left;
+    margin-left: 20px;
+    z-index:2;
+}
+.secondline{
+    background-color: #ffffff;
+    float:left;
+    width: 505px;
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.check{
+    background-color: rgb(155, 155, 48);
+    float:left;
+    width: 230px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.todo{
+    background-color: rgb(155, 155, 48);
+    float:left;
+    width: 230px;
+    height: 200px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.thirdline{
+    background-color: purple;
+    float:left;
+    width: 505px;
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.guide{
+    background-color: #ffffff;
+    width: 460px;
+    height: 180px;
+    text-align-last: left;
+
+}
+
+.fourthline{
+    background-color: orange;
+    float:left;
+    width: 250px;
+    height: 570px;
+    margin-top: -280px;
+    margin-left: 6px;
+    display:inline-block
+}

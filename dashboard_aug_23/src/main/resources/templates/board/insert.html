@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시글 쓰기</title>
+<link rel="stylesheet" href="../css/board/insert.css" type="text/css">
+</head>
+<body>
+<!-- 
+	form : 입력양식태그
+		action: 요청경로
+		method: 요청메소드(get/post)
+ -->
+<header></header>
+<form action="/board/insert" method="post">
+<h2>게시판 작성</h2>
+<table >
+	<tr>
+		<td>제목</td>
+		<td>
+			<input type="text" name="title">
+		</td>
+	</tr>
+	<tr>
+		<td>작성자</td>
+		<td>
+			<!--name:요청파라미터명-->
+			<input type="text" name="writer">
+		</td>
+		
+	</tr>
+	<tr>
+		<td>내용</td>
+		<td>
+			<textarea name ="content" id="글내용" cols="40" rows="10"></textarea>
+		</td>
+	</tr>
+</table>
+<div class="btn">
+	<button type="submit" class="reg_btn">등록</button>
+</div>
+<div class="btn">
+	<button type="submit" class="can_btn">취소</button>
+</div>
+</form>
+</body>
+</html>

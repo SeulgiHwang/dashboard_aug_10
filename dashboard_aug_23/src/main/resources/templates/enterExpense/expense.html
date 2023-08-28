@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력_지출</title>
+<link rel="stylesheet" href="../css/enter/expense.css" type="text/css">
+<!-- 날짜를 위한 api -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    	});
+        const input = document.querySelector('#amount');
+        input.addEventListener('keyup', function(e) {
+        let value = e.target.value;
+        value = Number(value.replaceAll(',', ''));
+        if(isNaN(value)) {
+          input.value = 0;
+        }else {
+            const formatValue = value.toLocaleString('ko-KR');
+            input.value = formatValue;
+        };
+    });
+    });
+</script>
+</head>
+<body>
+<h2>지출</h2>
+<div class="wrap">
+    <div class="expenseDate">
+        날짜
+        <a href="#">
+        <span><input type="text" id="datepicker" value="입력"></span>
+        </a>
+    </div>
+    <div class="expenseAmount">
+        <a href="#" id="amountLink">
+        금액
+        </a>
+        <span><input type="text" id="amount" value="0"></span>
+    </div>
+    <div class="expenseType">
+        카테고리
+        <a href="/enterExpense/category"><span>click</span></a>
+    </div>
+    <div class="expenseMethod">
+        결제수단
+        <a href="/enterExpense/expenseMethod"><span>click</span></a>
+    </div>
+    <div class="expenseNotes">
+        내용
+        <a href="#"><span><input type="text" id="exp_text" value="내용입력"></span></a>
+    </div>
+</div>
+<footer>
+    <div class="button" id="regExp"><button type="submit">등록</button></div>
+    <div class="button" id="reset" ><a href="#">초기화</a></div>
+    <div class="button" id="expList" ><a href="enterExpenseList">목록</a></div>
+</footer>
+</body> 
+</html>

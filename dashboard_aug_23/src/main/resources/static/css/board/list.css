@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    background-color: #ffffff;
+    list-style: none;
+    color:black
+}
+
+a{
+    text-decoration: none;
+}
+
+table{
+	margin-left: 5%;
+	margin-top: 8%;
+	position:absolute;
+}
+
+h2{
+	margin-left: 5%;
+	margin-top: 5%;
+	position:absolute;
+}
+
+.insert_btn{
+	margin-left: 44%;
+	margin-top: 5.5%;
+	position:absolute;
+}
